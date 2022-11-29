@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,900&display=swap"
+        rel="stylesheet">
+    <title>Starbucks</title>
+</head>
+
+<body>
+
+    
+
+    <img src="./images/logo.png" class="logo">
+
+
+    <div class="conteudo">
+
+        <div class="caixa-texto">
+            <H2>It's not just cofee <br>
+                It's <span>Starbucks </span> </H2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, minima quidem inventore laudantium iure
+                impedit fugit placeat sint consectetur repellat possimus delectus, reiciendis dolor, repudiandae
+                pariatur
+                fuga id explicabo a?</p>
+            <button>Deixe seu like</button>
+
+        </div>
+
+        <div class="caixa-imagem">
+            <img src="./images/img1.png" class="starbucks">
+        </div>
+
+        
+    </div>
+
+    <div class="menu">
+        <div class="circulo"></div>
+        <img src="./images/thumb1.png" class="botao-menu" onclick="trocaimagem('./images/img1.png'); trocacor('#017143')">
+        <img src="./images/thumb2.png" class="botao-menu" onclick="trocaimagem('./images/img2.png'); trocacor('#eb7495')">
+        <img src="./images/thumb3.png" class="botao-menu" onclick="trocaimagem('./images/img3.png'); trocacor('#d752b1')">
+    </div>
+
+
+</body>
+
+<script>
+    let imagem = document.querySelector(".starbucks")
+    let circulo = document.querySelector(".circulo")
+
+    function trocaimagem(endereco) {
+        imagem.src = endereco
+    }
+
+    function trocacor(cor){
+        circulo.style.background = cor
+        
+    }
+</script>
+</html>
